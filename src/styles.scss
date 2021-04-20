@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Baron";
+    src: url("assets/fonts/BaronNeue.otf");
+}
+
+@font-face {
+    font-family: "Bebas";
+    src: url("assets/fonts/BebasNeue-Regular.otf");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("assets/fonts/OpenSans-Regular.ttf");
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    font-family: "Open Sans";
+    font-weight: 400;
+    scroll-snap-type: y mandatory;
+}
+
+* {
+    box-sizing: border-box;
+}

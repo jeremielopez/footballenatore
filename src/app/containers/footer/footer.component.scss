@@ -1,0 +1,11 @@
+@import "../../../variables.scss";
+
+:host {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background: $background;
+    scroll-snap-align: start;
+}

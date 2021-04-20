@@ -1,0 +1,49 @@
+@import "../../../variables.scss";
+
+:host {
+    display: block;
+    position: fixed;
+    bottom: 2rem;
+    width: 600px;
+    height: 4rem;
+    max-width: 90%;
+    background: $background;
+    box-shadow: 20px 20px 50px rgba(darken($shadow, 40%), 0.2),
+        -20px -20px 50px rgba($shadow, 0.2);
+    border-radius: 50px;
+    margin: 0 auto; /* Will not center vertically and won't work in IE6/7. */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInUp 1.5s ease;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    flex: 1;
+    text-decoration: none;
+    color: $text;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    font-family: "Bebas";
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
